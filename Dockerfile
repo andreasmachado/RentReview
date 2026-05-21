@@ -13,6 +13,8 @@ COPY . .
 # Build the Vite frontend
 RUN npm run build
 
+RUN mkdir -p /data
+
 EXPOSE 3001
 
 ENV NODE_ENV=production
